@@ -2,8 +2,12 @@
   "name": "challenge-w",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "main": "public/js/index.js",
+  "scripts": {
+    "start": "node .",
+    "build": "tsc",
+    "build:dev": "tsc -w"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
