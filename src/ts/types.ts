@@ -1,6 +1,6 @@
-export interface Pokemon {
-  order: number;
+export interface PokemonStructure {
   name: string;
+  id: number;
   sprites: {
     front_default: string;
     other: {
