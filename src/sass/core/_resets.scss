@@ -1,3 +1,5 @@
+@import "../variables/colors";
+
 *,
 ::before,
 ::after {
@@ -13,6 +15,6 @@ h5,
 h6,
 p {
   margin: 0;
-  background-color: #ebebeb;
+  background-color: colors.$background-color;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
