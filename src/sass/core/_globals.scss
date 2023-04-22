@@ -1,0 +1,93 @@
+@use "../variables/colors";
+@use "../variables/typography";
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  background-color: colors.$dark-color;
+  border-radius: 20px;
+}
+
+.nav_items {
+  width: 75vw;
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.list_menu_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  background-color: colors.$dark-color;
+  border-radius: 20px 20px 0 0;
+  align-items: baseline;
+}
+
+.list_items_section {
+  background-color: colors.$main-light-color;
+  max-width: 75vw;
+  border-radius: 0 0 20px 20px;
+}
+
+.list_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.list_item {
+  background-color: colors.$dark-color;
+  padding: 1rem 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.pokemon_background {
+  width: 10rem;
+  background-color: colors.$main-light-color;
+  margin: 1rem 0 0 0;
+  border-radius: 50%;
+}
+
+.button {
+  background-color: colors.$main-light-color;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
