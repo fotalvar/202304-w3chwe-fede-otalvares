@@ -1,4 +1,5 @@
-@import "../variables/colors";
+@use "../variables/colors";
+@use "../variables/typography";
 
 *,
 ::before,
@@ -16,5 +17,5 @@ h6,
 p {
   margin: 0;
   background-color: colors.$background-color;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: typography.$main-typography;
 }
