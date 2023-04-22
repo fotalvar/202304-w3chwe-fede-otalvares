@@ -1,28 +1,32 @@
 import Component from "../Component/Component.js";
-import { type ComponentStructure } from "../types";
-import { type Pokemon } from "../../types.js";
+import PokemonCardComponent from "../PokemonCardComponent/PokemonCardComponent.js";
+import {
+  type PokemonsDataStructure,
+  type PokemonListStructure,
+} from "../types.js";
 
 class PokemonListComponent extends Component {
-  public apiUrl = "https://pokeapi.co/api/v2/pokemon/";
-  private pokemonList: Pokemon[] = [];
-
+  public apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=50&offset=0.";
+  private dataPokemons: PokemonListStructure[] = [];
   constructor(parentElement: Element) {
     super(parentElement, "ul", "list_items");
 
-    (async () => this.getPokemonList())();
+    (async () => this.getPokemons())();
   }
 
-  async getPokemonList(): Promise<void> {
+  async getPokemons(): Promise<void> {
     const response = await fetch(this.apiUrl);
-    const pokemonList = (await response.json()) as Pokemon[];
+    const data = (await response.json()) as PokemonsDataStructure;
 
-    this.pokemonList = pokemonList;
+    this.dataPokemons = data.results;
 
     this.renderHtml();
   }
 
   renderHtml(): void {
-    throw new Error("Method not implemented.");
+    this.dataPokemons.forEach((dataPokemon) => {
+      new PokemonCardComponent(this.element, dataPokemon.url);
+    });
   }
 }
 
