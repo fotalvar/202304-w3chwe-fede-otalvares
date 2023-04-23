@@ -16,8 +16,6 @@ class AppComponent extends Component {
       <nav class="nav">
         <ul class="nav_items">
           <li class="nav_item"><a href="./index.html">Todos los Pokémon</a></li>
-          <li class="nav_item"><a href="">Mis Pokémon</a></li>
-          <li class="nav_item"><a href="">Detalles</a></li>
         </ul>
       </nav>
     </header>

@@ -1,22 +1,20 @@
 import Component from "../Component/Component.js";
 import PokemonCardComponent from "../PokemonCardComponent/PokemonCardComponent.js";
-import {
-  type PokemonsDataStructure,
-  type PokemonListStructure,
-} from "../types.js";
+import { type PokemonListStructure } from "../types.js";
 
 class PokemonListComponent extends Component {
-  public apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=50&offset=0.";
-  private dataPokemons: PokemonListStructure[] = [];
+  apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=50&offset=0.";
+  dataPokemons: PokemonListStructure[] = [];
+
   constructor(parentElement: Element) {
     super(parentElement, "ul", "list_items");
 
-    (async () => this.getPokemons())();
+    (async () => this.getPokemonList())();
   }
 
-  async getPokemons(): Promise<void> {
+  async getPokemonList(): Promise<void> {
     const response = await fetch(this.apiUrl);
-    const data = (await response.json()) as PokemonsDataStructure;
+    const data = (await response.json()) as PokemonListStructure;
 
     this.dataPokemons = data.results;
 
