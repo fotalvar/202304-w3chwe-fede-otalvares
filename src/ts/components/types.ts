@@ -5,5 +5,8 @@ export interface ComponentStructure {
 export interface PokemonListStructure {
   name: string;
   url: string;
+  count: number;
+  next: "string";
+  previous: "string";
   results: PokemonListStructure[];
 }
