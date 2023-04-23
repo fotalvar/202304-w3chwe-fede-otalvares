@@ -9,7 +9,9 @@
     "build:dev": "tsc -w",
     "prepare": "husky install",
     "build-styles": "sass src/sass/styles.scss public/css/styles.css",
-    "build-styles:dev": "sass --watch src/sass/styles.scss public/css/styles.css"
+    "build-styles:dev": "sass --watch src/sass/styles.scss public/css/styles.css",
+    "test": "jest",
+    "test:dev": "jest —watchAll"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
     "eslint-config-xo-typescript": "^0.57.0",
     "husky": "^8.0.0",
     "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "sass": "^1.62.0",
     "typescript": "^5.0.4"
   }
