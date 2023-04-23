@@ -11,7 +11,7 @@ class AppComponent extends Component {
   renderHtml(): void {
     this.element.innerHTML = `
     <header class="header">
-      <img src="img/logo_pokemon.svg" alt="Pokémon logo" width="300">
+      <img src="img/logo_pokemon.svg" alt="Pokémon logo" width="300" height="110">
       <h1>PokeDex</h1>
       <nav class="nav">
         <ul class="nav_items">
