@@ -37,11 +37,10 @@ h1 {
 
 nav {
   background-color: colors.$dark-color;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 .nav_items {
-  width: 75vw;
   display: flex;
   padding: 1rem;
   gap: 2rem;
@@ -66,23 +65,29 @@ nav {
 .list_items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
+  max-width: 75vw;
 }
 
 .list_item {
-  background-color: colors.$dark-color;
-  padding: 1rem 1rem;
+  background-color: colors.$main-light-color;
   margin: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   flex: 1;
+  text-transform: capitalize;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  max-width: 120px;
 }
 
-.pokemon_background {
-  width: 10rem;
-  background-color: colors.$main-light-color;
+.pokemon_image {
   margin: 1rem 0 0 0;
-  border-radius: 50%;
+  width: 96px;
+  height: 96px;
 }
 
 .button {
@@ -90,4 +95,20 @@ nav {
   border: none;
   padding: 1rem;
   border-radius: 10px;
+}
+
+.pokemon_id {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.pokemon_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 850px;
 }
