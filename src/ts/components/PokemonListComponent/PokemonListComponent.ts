@@ -3,7 +3,7 @@ import PokemonCardComponent from "../PokemonCardComponent/PokemonCardComponent.j
 import { type PokemonListStructure } from "../types.js";
 
 class PokemonListComponent extends Component {
-  apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=50&offset=0.";
+  apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=151&offset=0.";
   dataPokemons: PokemonListStructure[] = [];
 
   constructor(parentElement: Element) {
