@@ -16,6 +16,26 @@ h5,
 h6,
 p {
   margin: 0;
-  background-color: colors.$background-color;
   font-family: typography.$main-typography;
+  color: colors.$dark-color;
+  background: radial-gradient(circle at top left, #eeeeee 25%, transparent 26%),
+    radial-gradient(
+      circle at bottom right,
+      transparent 19%,
+      #eeeeee 20%,
+      #eeeeee 25%,
+      transparent 21%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      transparent 19%,
+      #eeeeee 20%,
+      #eeeeee 25%,
+      transparent 26%
+    ),
+    radial-gradient(circle at top right, #eeeeee 25%, transparent 26%);
+  background-size: 4em 4em;
+  background-color: colors.$background-color;
+  opacity: 1;
 }

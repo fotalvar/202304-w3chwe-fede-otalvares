@@ -36,8 +36,9 @@ h1 {
 }
 
 nav {
-  background-color: colors.$dark-color;
+  background-color: colors.$soft-dark-color;
   border-radius: 50px;
+  font-weight: 600;
 }
 
 .nav_items {
