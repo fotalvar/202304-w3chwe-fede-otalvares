@@ -15,7 +15,7 @@ class AppComponent extends Component {
       <h1>PokeDex</h1>
       <nav class="nav">
         <ul class="nav_items">
-          <li class="nav_item"><a href="./index.html">Todos los Pokémon</a></li>
+          <li class="nav_item"><a href="./index.html">All Pokemon</a></li>
         </ul>
       </nav>
     </header>
